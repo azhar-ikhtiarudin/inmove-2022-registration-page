@@ -1,247 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+        <link rel="stylesheet" href="../public/css/style.css">
+        <link rel="icon" href="../public/images/temp_icon.jpg">
+    </head>
+    <body>
+        <div class="container">
+            <!-- link form : https://docs.google.com/forms/d/1XJA80LoM7ILRHkZYVca6rkSSTX48Nn4Ez9_zQef1ooI/edit?usp=sharing -->
+            <form id="registration" onsubmit="return postToGoogle()">
+                <fieldset>
+                    <input  placeholder="Nama Tim"
+                            type="text" 
+                            name="entry.1581661742" 
+                            data-name="Name" 
+                            id="NamaTim" 
+                            required>
+                </fieldset>
+                <fieldset>
+                    <br><input type="radio" name="entry.341280249" id="multiple-choice" data-name="multiple-choice" value="Business Plan" required>Business Plan<br/>
+                    <br><input type="radio" name="entry.341280249" id="multiple-choice" data-name="multiple-choice" value="Innovation Competition" required>Innovation Competition<br/>
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="Judul"
+                            type="text" 
+                            name="entry.1114922784" 
+                            data-name="Name" 
+                            id="Judul" 
+                            required>
+                </fieldset>
+            <!-- Ketua Tim -->
+                <fieldset>
+                    <input  placeholder="Nama Ketua Tim"
+                            type="text" 
+                            name="entry.1997334444" 
+                            data-name="Name" 
+                            id="NamaKetua" 
+                            required>
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="NIM Ketua Tim"
+                            type="number" 
+                            name="entry.1521541460" 
+                            data-name="Number" 
+                            id="NIMKetua" 
+                            required>
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="NO. HP/WA Ketua Tim"
+                            type="number" 
+                            name="entry.555038672" 
+                            data-name="Number" 
+                            id="WAKetua" 
+                            required>
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="Email Ketua Tim"
+                            type="email" 
+                            name="entry.23042440" 
+                            data-name="Email" 
+                            id="EmailKetua" 
+                            required>
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="Jurusan/Fakultas Ketua Tim"
+                            type="text" 
+                            name="entry.1727905460" 
+                            data-name="Text" 
+                            id="JurusanKetua" 
+                            required>
+                </fieldset>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Forms</title>
-	<link rel="stylesheet" href="../public/css/style.css">
-	<link rel="icon" href="../public/images/temp_icon.jpg">
-</head>
-<body>
-	<div class="container">
-		<!-- link form : https://docs.google.com/forms/d/1XJA80LoM7ILRHkZYVca6rkSSTX48Nn4Ez9_zQef1ooI/edit?usp=sharing -->
-		<form id="registration" onsubmit="return postToGoogle()">
-			<fieldset>
-				<input  placeholder="Nama Tim"
-						type="text" 
-						name="entry.1581661742" 
-						data-name="Name" 
-						id="NamaTim" 
-						required>
-			</fieldset>
-			<fieldset>
-				<br><input type="radio" name="entry.341280249" id="multiple-choice" data-name="multiple-choice" value="Business Plan" required>Business Plan<br/>
-				<br><input type="radio" name="entry.341280249" id="multiple-choice" data-name="multiple-choice" value="Innovation Competition" required>Innovation Competition<br/>
-			</fieldset>
-			<fieldset>
-				<input  placeholder="Judul"
-						type="text" 
-						name="entry.1114922784" 
-						data-name="Name" 
-						id="Judul" 
-						required>
-			</fieldset>
-		<!-- Ketua Tim -->
-			<fieldset>
-				<input  placeholder="Nama Ketua Tim"
-						type="text" 
-						name="entry.1997334444" 
-						data-name="Name" 
-						id="NamaKetua" 
-						required>
-			</fieldset>
-			<fieldset>
-				<input  placeholder="NIM Ketua Tim"
-						type="number" 
-						name="entry.1521541460" 
-						data-name="Number" 
-						id="NIMKetua" 
-						required>
-			</fieldset>
-			<fieldset>
-				<input  placeholder="NO. HP/WA Ketua Tim"
-						type="number" 
-						name="entry.555038672" 
-						data-name="Number" 
-						id="WAKetua" 
-						required>
-			</fieldset>
-			<fieldset>
-				<input  placeholder="Email Ketua Tim"
-						type="email" 
-						name="entry.23042440" 
-						data-name="Email" 
-						id="EmailKetua" 
-						required>
-			</fieldset>
-			<fieldset>
-				<input  placeholder="Jurusan/Fakultas Ketua Tim"
-						type="text" 
-						name="entry.1727905460" 
-						data-name="Text" 
-						id="JurusanKetua" 
-						required>
-			</fieldset>
+            <!-- Anggota 1 -->
+                <fieldset>
+                    <input  placeholder="Nama Anggota 1"
+                            type="text" 
+                            name="entry.1262363675" 
+                            data-name="Name" 
+                            id="NamaAnggota1" 
+                            required>
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="NIM Anggota 1"
+                            type="number" 
+                            name="entry.2101437308" 
+                            data-name="Number" 
+                            id="NIMAnggota1" 
+                            required>
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="NO. HP/WA Anggota 1"
+                            type="number" 
+                            name="entry.1869623170" 
+                            data-name="Number" 
+                            id="WAAnggota1" 
+                            required>
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="Email Anggota 1"
+                            type="email" 
+                            name="entry.866114325" 
+                            data-name="Email" 
+                            id="EmailAnggota1" 
+                            required>
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="Jurusan/Fakultas Anggota 1"
+                            type="text" 
+                            name="entry.53220122" 
+                            data-name="Text" 
+                            id="JurusanAnggota1" 
+                            required>
+                </fieldset>
 
-		<!-- Anggota 1 -->
-			<fieldset>
-				<input  placeholder="Nama Anggota 1"
-						type="text" 
-						name="entry.1262363675" 
-						data-name="Name" 
-						id="NamaAnggota1" 
-						required>
-			</fieldset>
-			<fieldset>
-				<input  placeholder="NIM Anggota 1"
-						type="number" 
-						name="entry.2101437308" 
-						data-name="Number" 
-						id="NIMAnggota1" 
-						required>
-			</fieldset>
-			<fieldset>
-				<input  placeholder="NO. HP/WA Anggota 1"
-						type="number" 
-						name="entry.1869623170" 
-						data-name="Number" 
-						id="WAAnggota1" 
-						required>
-			</fieldset>
-			<fieldset>
-				<input  placeholder="Email Anggota 1"
-						type="email" 
-						name="entry.866114325" 
-						data-name="Email" 
-						id="EmailAnggota1" 
-						required>
-			</fieldset>
-			<fieldset>
-				<input  placeholder="Jurusan/Fakultas Anggota 1"
-						type="text" 
-						name="entry.53220122" 
-						data-name="Text" 
-						id="JurusanAnggota1" 
-						required>
-			</fieldset>
+            <!-- Anggota 2 -->
+                <fieldset>
+                    <input  placeholder="Nama Anggota 2"
+                            type="text" 
+                            name="entry.760502139" 
+                            data-name="Name" 
+                            id="NamaAnggota2" 
+                            required>
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="NIM Anggota 2"
+                            type="number" 
+                            name="entry.741185228" 
+                            data-name="Number" 
+                            id="NIMAnggota2" 
+                            required>
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="NO. HP/WA Anggota 2"
+                            type="number" 
+                            name="entry.1936969774" 
+                            data-name="Number" 
+                            id="WAAnggota2" 
+                            required>
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="Email Anggota 2"
+                            type="email" 
+                            name="entry.1438802705" 
+                            data-name="Email" 
+                            id="EmailAnggota2" 
+                            required>
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="Jurusan/Fakultas Anggota 2"
+                            type="text" 
+                            name="entry.142234712" 
+                            data-name="Text" 
+                            id="JurusanAnggota2" 
+                            required>
+                </fieldset>
 
-		<!-- Anggota 2 -->
-			<fieldset>
-				<input  placeholder="Nama Anggota 2"
-						type="text" 
-						name="entry.760502139" 
-						data-name="Name" 
-						id="NamaAnggota2" 
-						required>
-			</fieldset>
-			<fieldset>
-				<input  placeholder="NIM Anggota 2"
-						type="number" 
-						name="entry.741185228" 
-						data-name="Number" 
-						id="NIMAnggota2" 
-						required>
-			</fieldset>
-			<fieldset>
-				<input  placeholder="NO. HP/WA Anggota 2"
-						type="number" 
-						name="entry.1936969774" 
-						data-name="Number" 
-						id="WAAnggota2" 
-						required>
-			</fieldset>
-			<fieldset>
-				<input  placeholder="Email Anggota 2"
-						type="email" 
-						name="entry.1438802705" 
-						data-name="Email" 
-						id="EmailAnggota2" 
-						required>
-			</fieldset>
-			<fieldset>
-				<input  placeholder="Jurusan/Fakultas Anggota 2"
-						type="text" 
-						name="entry.142234712" 
-						data-name="Text" 
-						id="JurusanAnggota2" 
-						required>
-			</fieldset>
+            <!-- Anggota 3 -->
+                <fieldset>
+                    <input  placeholder="Nama Anggota 3"
+                            type="text" 
+                            name="entry.56138041" 
+                            data-name="Name" 
+                            id="NamaAnggota3">
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="NIM Anggota 3"
+                            type="number" 
+                            name="entry.2129012810" 
+                            data-name="Number" 
+                            id="NIMAnggota3" >
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="NO. HP/WA Anggota 3"
+                            type="number" 
+                            name="entry.714190766" 
+                            data-name="Number" 
+                            id="WAAnggota3">
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="Email Anggota 3"
+                            type="email" 
+                            name="entry.1393543942" 
+                            data-name="Email" 
+                            id="EmailAnggota3">
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="Jurusan/Fakultas Anggota 3"
+                            type="text" 
+                            name="entry.1172521898" 
+                            data-name="Text" 
+                            id="JurusanAnggota3">
+                </fieldset>
 
-		<!-- Anggota 3 -->
-			<fieldset>
-				<input  placeholder="Nama Anggota 3"
-						type="text" 
-						name="entry.56138041" 
-						data-name="Name" 
-						id="NamaAnggota3">
-			</fieldset>
-			<fieldset>
-				<input  placeholder="NIM Anggota 3"
-						type="number" 
-						name="entry.2129012810" 
-						data-name="Number" 
-						id="NIMAnggota3" >
-			</fieldset>
-			<fieldset>
-				<input  placeholder="NO. HP/WA Anggota 3"
-						type="number" 
-						name="entry.714190766" 
-						data-name="Number" 
-						id="WAAnggota3">
-			</fieldset>
-			<fieldset>
-				<input  placeholder="Email Anggota 3"
-						type="email" 
-						name="entry.1393543942" 
-						data-name="Email" 
-						id="EmailAnggota3">
-			</fieldset>
-			<fieldset>
-				<input  placeholder="Jurusan/Fakultas Anggota 3"
-						type="text" 
-						name="entry.1172521898" 
-						data-name="Text" 
-						id="JurusanAnggota3">
-			</fieldset>
+            <!-- Anggota 4 -->
+                <fieldset>
+                    <input  placeholder="Nama Anggota 4"
+                            type="text" 
+                            name="entry.291610768" 
+                            data-name="Name" 
+                            id="NamaAnggota4">
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="NIM Anggota 4"
+                            type="number" 
+                            name="entry.1485450429" 
+                            data-name="Number" 
+                            id="NIMAnggota4">
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="NO. HP/WA Anggota 4"
+                            type="number" 
+                            name="entry.2092183236" 
+                            data-name="Number" 
+                            id="WAAnggota4">
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="Email Anggota 4"
+                            type="email" 
+                            name="entry.305481678" 
+                            data-name="Email" 
+                            id="EmailAnggota4">
+                </fieldset>
+                <fieldset>
+                    <input  placeholder="Jurusan/Fakultas Anggota 4"
+                            type="text" 
+                            name="entry.1470841958" 
+                            data-name="Text"
+                            id="JurusanAnggota4">
+                </fieldset>
 
-		<!-- Anggota 4 -->
-			<fieldset>
-				<input  placeholder="Nama Anggota 4"
-						type="text" 
-						name="entry.291610768" 
-						data-name="Name" 
-						id="NamaAnggota4">
-			</fieldset>
-			<fieldset>
-				<input  placeholder="NIM Anggota 4"
-						type="number" 
-						name="entry.1485450429" 
-						data-name="Number" 
-						id="NIMAnggota4">
-			</fieldset>
-			<fieldset>
-				<input  placeholder="NO. HP/WA Anggota 4"
-						type="number" 
-						name="entry.2092183236" 
-						data-name="Number" 
-						id="WAAnggota4">
-			</fieldset>
-			<fieldset>
-				<input  placeholder="Email Anggota 4"
-						type="email" 
-						name="entry.305481678" 
-						data-name="Email" 
-						id="EmailAnggota4">
-			</fieldset>
-			<fieldset>
-				<input  placeholder="Jurusan/Fakultas Anggota 4"
-						type="text" 
-						name="entry.1470841958" 
-						data-name="Text"
-						id="JurusanAnggota4">
-			</fieldset>
-
-			<fieldset>
-					<button type="submit" id="contact-submit">Submit</button>
-			</fieldset>
-		</form>
-	</div>
-
-  <script src="registration_page.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-</body>
-
+                <fieldset>
+                        <button type="submit" id="contact-submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        <script src="registration_page.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </body>
 </html>
