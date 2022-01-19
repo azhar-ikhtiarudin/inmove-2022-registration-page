@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: "Poppins";
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.top-wrapper {
+    padding: 70px 0 10px 0;
+    background-color: rgb(8, 8, 44);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+  
+.top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.form-wrapper {
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(8, 8, 44);
+    background-size: cover;
+    color: white;
+}
+
+fieldset {
+    border:2px solid white;	
+    border-radius:8px;
+    margin: 10px 0 20px 0;
+}
+
+input {
+    width: 100%;
+    color: white;
+    background-color: rgb(29, 2, 78);
+    opacity: 0.7;
+}
+
+/* HEADER */
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(3, 0, 39, 0.9);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+}
+  
+.logo {
+    width: 45px;
+    margin-top: 10px;
+}
+  
+.header-left {
+    float: left;
+}
+  
+.header-right {
+    float: right;
+    margin-right: -25px;
+}
+  
+.header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+  
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
